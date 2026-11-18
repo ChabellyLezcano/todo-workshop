@@ -9,6 +9,11 @@
   <body>
     <main class="app">
       <h1>Todo Workshop</h1>
+      <form id="new-task" class="new-task">
+        <label for="task-title">New task</label>
+        <input id="task-title" name="title" autocomplete="off" required />
+        <button type="submit">Add</button>
+      </form>
       <ul id="tasks" class="tasks"></ul>
     </main>
     <script type="module" src="app.js"></script>
