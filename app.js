@@ -18,7 +18,9 @@ function render() {
 function addTask(event) {
   event.preventDefault();
   const input = form.elements.title;
-  tasks.push({ title: input.value, done: false });
+  const title = input.value.trim();
+  if (!title) return;
+  tasks.push({ title, done: false });
   input.value = '';
   input.focus();
   render();
