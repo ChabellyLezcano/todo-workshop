@@ -29,8 +29,10 @@ function addTask(event) {
 form.addEventListener('submit', addTask);
 
 loadTasks()
-  .then((initial) => tasks.push(...initial))
+  .then((initial) => {
+    tasks.push(...initial);
+    render();
+  })
   .catch((error) => {
     list.textContent = error.message;
-  })
-  .finally(render);
+  });
