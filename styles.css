@@ -1,0 +1,31 @@
+:root {
+  --bg: #15171c;
+  --surface: #1f232b;
+  --text: #ece8e1;
+  --accent: #ff9257;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  max-width: 32rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks li {
+  background: var(--surface);
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+}
